@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crud</title>
+</head>
+<body>
+    <!-- Crud: Create Read Update Delete/ min que se deve fazer -->
+    <!--table>thead>tr>th*3-->
+    <form>
+        <h2>Nova tarefa</h2>
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" maxlength="50" size="50" requiered>
+        <label for="prioridade">Prioridade:</label>
+        <select id="prioridade"> <!--como box -->
+            <option>Baixa</option>
+            <option>Média</option>
+            <option>Alta</option>
+        </select>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Adicionar">
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tarefa</th>
+                <th>Prioridade</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Escrever uma atividade</td>
+                <td>Alta</td>
+                <td>
+                    <button>Excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="js/crud.js"></script>
+</body>
+</html>
